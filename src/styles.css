@@ -1,0 +1,157 @@
+body {
+  margin: 0; 
+  background: whitesmoke; 
+}
+
+
+/* Layout */
+
+.header {
+  background-image: url("./assets/Movie.jpg");
+  font-family: 'Limelight', cursive;
+  background-size: cover; 
+  padding: 3rem 0; 
+  border-bottom: 1px solid black; 
+  margin-bottom: 0rem; 
+}
+
+
+.search {
+  display: flex; 
+  flex-direction: column; 
+  max-width: 250px; 
+  margin: 0 auto; 
+  margin-top: 1.5rem; 
+}
+
+.search--movie {
+  border: 1px black solid; 
+  border-radius: 5px; 
+  font-family: sans-serif;
+  margin-bottom: .5rem; 
+  margin-top: 1.5rem;
+  padding: .5rem 0rem;  
+  padding-left: 0.5rem; 
+}
+
+.search--btn {
+   background: beige;
+   font-family: sans-serif;
+   border-radius: 5px; 
+   padding: .5rem 0rem; 
+   font-weight: bold; 
+   border: 1px black solid; 
+}
+
+.movie--container {
+  display: flex;
+  flex-direction: column; 
+  margin: 0 auto; 
+  max-width: 250px;  
+  
+}
+
+.movie--subcontainer {
+  display: flex; 
+  flex-direction: column;  
+  padding: 0px .6rempx;
+  margin-bottom: 3.5rem; 
+  margin-left: .2rem;  
+}
+
+.footer--container {
+  background: whitesmoke;
+  text-align: center; 
+  padding: .5rem 0rem; 
+  margin-top: 2.5rem;
+}
+
+/* Typography */
+
+
+.header--title {
+  font-size: 2rem;
+  margin-top: 3.2rem; 
+  text-decoration: none; 
+  color: black; 
+  text-align: center; 
+}
+
+
+.movie--title {
+  margin: 0;
+  padding-bottom: .6rem; 
+  font-size: 1.2rem
+}
+
+.movie--year {
+  margin: 0;
+  padding-bottom: .3rem;
+  font-size: 1.1rem
+}
+
+.movie--type { 
+  margin: 0;
+  padding-bottom: .6rem; 
+  font-size: 1.1rem; 
+}
+
+
+
+/* Images */
+
+.movie--image {
+  width: 100%; 
+  margin: 1rem 0rem;   
+}
+
+
+/* Media Queries */
+
+@media(min-width: 700px) {
+  
+  .search {
+      display: flex;
+      flex-direction: row; 
+      max-width: 700px;
+      justify-content: center;   
+  }
+  
+  .search--movie {   
+      margin: 0px .3rem; 
+ }
+
+  .search--btn {
+      margin: 0px 5px;
+      padding: .6rem 2rem; 
+  }
+  
+  .movie--wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      width: 85%;
+      margin: 0 auto;  
+  }
+ 
+  .movie--container {
+      display: flex;
+      flex-direction: row;
+      margin: 2.5rem auto; 
+      max-width: 410px; 
+      
+  }
+
+  .movie--subcontainer {
+      justify-content: center;
+      margin: 0;  
+      margin-left: 1.8rem;
+      margin-right: .5rem;  
+  }
+
+  .movie--image {
+      width: 50%; 
+      margin: 1rem 0rem;   
+}
+         
+}
+
